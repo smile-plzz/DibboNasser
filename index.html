@@ -1,1 +1,479 @@
-<p> Hello </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dibbo Nasser | Guitarist, Composer, Sound &amp; Music Collaborator</title>
+  <meta name="description" content="Academic portfolio of Dibbo Nasser, Dhaka-based guitarist and composer, prepared for the ReSound Erasmus Mundus Joint Master's application.">
+  <meta name="theme-color" content="#101010">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dibbo Nasser | Academic Music &amp; Sound Portfolio">
+  <meta property="og:description" content="Guitarist, composer and sound collaborator from Dhaka, Bangladesh. Three selected works for the ReSound Erasmus Mundus Joint Master's.">
+  <!-- TODO: after deployment, set the full URL and add a 1200x630 image at assets/images/og.jpg -->
+  <!-- <meta property="og:url" content="https://USERNAME.github.io/REPO/"> -->
+  <!-- <meta property="og:image" content="https://USERNAME.github.io/REPO/assets/images/og.jpg"> -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon (inline SVG, no file needed). Replace with assets/images/favicon.png if preferred. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23101010'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23F2F0EA' font-family='Georgia,serif'%3ED%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+  <style>
+:root{
+  --bg:#101010;
+  --bg-2:#171716;
+  --text:#F2F0EA;
+  --muted:#A5A5A5;
+  --line:#2a2a28;
+  --accent:#C9A66B;
+  --sans:"Inter","Manrope","DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Newsreader","Iowan Old Style",Georgia,serif;
+  --gutter:clamp(20px,5vw,72px);
+  --max:1280px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+img,iframe{max-width:100%}
+a{color:inherit;text-decoration:none}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--text);color:var(--bg);padding:8px 14px;z-index:100}
+.skip:focus{left:8px}
+
+/* Header */
+.site-header{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px var(--gutter);background:linear-gradient(to bottom,rgba(16,16,16,.92),rgba(16,16,16,0));backdrop-filter:blur(2px)}
+.brand{font-family:var(--serif);font-size:1.25rem;letter-spacing:.08em}
+.site-header ul{display:flex;gap:clamp(14px,3vw,36px);list-style:none;margin:0;padding:0}
+.site-header nav a{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);transition:color .25s;padding:6px 0;border-bottom:1px solid transparent}
+.site-header nav a:hover,.site-header nav a.active{color:var(--text);border-bottom-color:var(--accent)}
+
+/* Type */
+.eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:0 0 1.5rem}
+.eyebrow .sep{display:inline-block;width:28px;height:1px;background:var(--accent);vertical-align:middle;margin:0 14px}
+h1,h2,h3{font-family:var(--serif);font-weight:300;line-height:1.05;margin:0}
+h4{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:500;margin:2rem 0 .6rem}
+h4:first-child{margin-top:0}
+
+/* Hero */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;position:relative;padding:120px 0 90px}
+.hero-grid{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px}
+.hero .eyebrow{grid-column:1/-1}
+.hero-name{grid-column:1/-1;font-size:clamp(3.4rem,13vw,11rem);letter-spacing:-.02em;text-transform:uppercase;font-weight:300}
+.hero-name span{display:block}
+.hero-name .indent{padding-left:clamp(0px,12vw,12rem);color:var(--text)}
+.hero-meta{grid-column:1/-1;margin-top:2.2rem;display:flex;flex-wrap:wrap;gap:.4rem 2.5rem;align-items:baseline}
+.role{margin:0;font-size:1.05rem;letter-spacing:.04em}
+.place{margin:0;color:var(--muted);font-size:.95rem}
+.hero-intro{grid-column:6/-1;margin-top:3rem;font-family:var(--serif);font-size:clamp(1.25rem,2.2vw,1.75rem);line-height:1.45;color:var(--text);max-width:34em}
+.scroll-cue{position:absolute;left:var(--gutter);bottom:28px;display:flex;align-items:center;gap:14px;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.scroll-cue i{display:block;width:1px;height:46px;background:linear-gradient(var(--accent),transparent);animation:cue 2.4s ease-in-out infinite;transform-origin:top}
+@keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+
+/* Works */
+.works{padding:clamp(70px,10vw,140px) 0 40px;border-top:1px solid var(--line)}
+.section-head h2{font-size:clamp(2rem,4.6vw,3.8rem);max-width:16em}
+.work{padding:clamp(60px,9vw,120px) 0;border-bottom:1px solid var(--line)}
+.work:last-of-type{border-bottom:0}
+.work-grid{display:grid;grid-template-columns:repeat(12,1fr);column-gap:clamp(16px,3vw,40px);row-gap:36px;align-items:start}
+.work-head{grid-column:1/5}
+.work-video{grid-column:5/-1}
+.work-text{grid-column:5/-1;max-width:46rem}
+.flip .work-head{grid-column:9/-1;grid-row:1}
+.flip .work-video{grid-column:1/9;grid-row:1}
+.flip .work-text{grid-column:1/9;grid-row:2}
+.work-num{font-family:var(--serif);font-size:clamp(3.5rem,8vw,7rem);line-height:1;color:var(--accent);margin:0 0 .6rem;font-weight:300;opacity:.9}
+.work-head h3{font-size:clamp(1.7rem,3vw,2.6rem)}
+.work-sub{color:var(--muted);margin:.8rem 0 1.6rem}
+.work-meta{margin:0;display:grid;gap:.7rem}
+.work-meta div{display:flex;gap:16px;border-top:1px solid var(--line);padding-top:.6rem}
+.work-meta dt{width:5.5rem;flex:none;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding-top:.25rem}
+.work-meta dd{margin:0;font-size:.95rem}
+.video-frame{position:relative;aspect-ratio:16/9;background:#000;border:1px solid var(--line);overflow:hidden}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-placeholder{position:absolute;inset:0;display:grid;place-content:center;text-align:center;gap:.3rem;background:repeating-linear-gradient(135deg,#131312 0 14px,#161615 14px 28px)}
+.video-placeholder p{margin:0;font-family:var(--serif);font-size:2rem;color:var(--muted)}
+.video-placeholder small{color:var(--muted);font-size:.78rem;padding:0 1rem}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.85em;color:var(--accent)}
+.reflection{font-family:var(--serif);font-size:clamp(1.15rem,1.7vw,1.35rem);line-height:1.65;margin:0;color:var(--text)}
+.role-line{margin:0;color:var(--text)}
+.credits{margin:0;padding:0;list-style:none;color:var(--muted);font-size:.95rem}
+.credits li{padding:.3rem 0;border-bottom:1px solid var(--line)}
+.placeholder-text{outline:1px dashed #4a4333;outline-offset:6px}
+.runtime-note{color:var(--muted);font-size:.85rem;padding-top:40px}
+
+/* Background */
+.background{padding:clamp(70px,10vw,140px) 0;background:var(--bg-2);border-top:1px solid var(--line)}
+.bg-grid{display:grid;grid-template-columns:repeat(12,1fr);column-gap:clamp(16px,3vw,40px);row-gap:56px}
+.bg-grid .section-head{grid-column:1/4}
+.about{grid-column:5/-1;max-width:42rem;color:#d4d2cb}
+.about .lede{font-family:var(--serif);font-size:clamp(1.35rem,2.2vw,1.85rem);line-height:1.4;color:var(--text);margin-top:0}
+.credits-block,.milestones,.gear{grid-column:5/-1}
+.mini{font-family:var(--sans);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:1rem}
+.cred-list{margin:0}
+.cred-list>div{display:grid;grid-template-columns:9rem 1fr;gap:16px;padding:.9rem 0;border-top:1px solid var(--line)}
+.cred-list dt{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding-top:.3rem}
+.cred-list dd{margin:0;font-size:.95rem;color:#d4d2cb}
+.gear summary{cursor:pointer;list-style:none;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);padding:.9rem 0;border-top:1px solid var(--line)}
+.gear summary::-webkit-details-marker{display:none}
+.gear summary::after{content:"+";float:right;color:var(--accent)}
+.gear[open] summary::after{content:"\2212"}
+.gear dl{margin-top:.4rem}
+
+/* Contact */
+.contact{padding:clamp(70px,9vw,120px) 0 36px;border-top:1px solid var(--line)}
+.contact-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:40px;align-items:flex-end}
+.mail{font-family:var(--serif);font-size:clamp(1.6rem,4.5vw,3.4rem);border-bottom:1px solid var(--accent);word-break:break-all}
+.mail:hover{color:var(--accent)}
+.links{list-style:none;margin:0;padding:0;display:flex;gap:28px;flex-wrap:wrap}
+.links a{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);transition:color .25s}
+.links a:hover{color:var(--text)}
+.links a.todo-link{opacity:.5}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 32px;margin-top:80px;padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem}
+.foot p{margin:0}
+
+/* Reveal */
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.in{opacity:1;transform:none}
+
+/* Tablet and mobile */
+@media (max-width:960px){
+  .work-head,.work-video,.work-text,
+  .flip .work-head,.flip .work-video,.flip .work-text{grid-column:1/-1;grid-row:auto}
+  .work-head{display:grid;gap:0}
+  .bg-grid .section-head,.about,.credits-block,.milestones,.gear{grid-column:1/-1}
+  .hero-intro{grid-column:1/-1}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .site-header ul{gap:12px}
+  .site-header nav a{font-size:.62rem;letter-spacing:.1em}
+  .brand{display:none}
+  .site-header{justify-content:center}
+  .cred-list>div{grid-template-columns:1fr;gap:2px}
+  .hero{padding-top:100px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .scroll-cue i{animation:none}
+}
+</style>
+</head>
+<body>
+  <a class="skip" href="#works">Skip to selected works</a>
+
+  <header class="site-header">
+    <a class="brand" href="#intro" aria-label="Dibbo Nasser, back to top">D.N.</a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#works">Selected Works</a></li>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="intro" class="hero">
+      <div class="wrap hero-grid">
+        <p class="eyebrow reveal">Academic Portfolio<span class="sep"></span>ReSound &middot; Erasmus Mundus Joint Master's Application</p>
+        <h1 class="hero-name reveal"><span>Dibbo</span> <span class="indent">Nasser</span></h1>
+        <div class="hero-meta reveal">
+          <p class="role">Guitarist &middot; Composer &middot; Sound &amp; Music Collaborator</p>
+          <p class="place">Dhaka, Bangladesh</p>
+        </div>
+        <p class="hero-intro reveal">Exploring the intersection of instrumental expression, musical composition, performance, and sound across contemporary music, film, and collaborative projects.</p>
+      </div>
+      <a class="scroll-cue" href="#works" aria-label="Scroll to selected works"><span>Selected Works</span><i></i></a>
+    </section>
+
+    <!-- SELECTED WORKS -->
+    <section id="works" class="works">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">Selected Works</p>
+          <h2>Three pieces, each with my role stated plainly.</h2>
+        </header>
+      </div>
+
+      <!--
+        EDIT HERE: each project is one <article class="work">.
+        1. Replace the data-video-id value with the 11-character YouTube ID
+           (the part after v= in the video URL).
+        2. Replace the [PLACEHOLDER] text in the title, meta, reflection and credits.
+        3. Keep reflections to roughly 120 words.
+      -->
+
+      <!-- PROJECT 01 -->
+      <article class="work" id="work-01" aria-labelledby="work-01-title">
+        <div class="wrap work-grid">
+          <header class="work-head reveal">
+            <p class="work-num">01</p>
+            <h3 id="work-01-title">[PROJECT TITLE 01]</h3>
+            <p class="work-sub">[Artist / Band / Album]</p>
+            <dl class="work-meta">
+              <div><dt>Year</dt><dd>[YEAR]</dd></div>
+              <div><dt>Category</dt><dd>[e.g. Studio album track / Film score / Session work]</dd></div>
+              <div><dt>Runtime</dt><dd>[m:ss]</dd></div>
+            </dl>
+          </header>
+
+          <div class="work-video reveal">
+            <div class="video-frame" data-video-id="YOUTUBE_ID_01" data-title="[PROJECT TITLE 01] - [Artist / Band], official video">
+              <div class="video-placeholder">
+                <p>Video 01</p>
+                <small>Paste the YouTube ID into <code>data-video-id</code> in index.html</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-text reveal">
+            <h4>Reflection and role</h4>
+            <p class="reflection placeholder-text">[PASTE REFLECTIVE PARAGRAPH 01 HERE, approx. 120 words. Cover: context and creative intention; what the piece explores; your specific role (lead guitar, session guitar, composition, arrangement, production, scoring); collaborators; what you learned.]</p>
+            <h4>My role</h4>
+            <p class="role-line placeholder-text">[One line, e.g. "Lead guitar and arrangement of guitar parts." Be exact.]</p>
+            <h4>Credits</h4>
+            <ul class="credits placeholder-text">
+              <li>[Credit 1]</li>
+              <li>[Credit 2]</li>
+              <li>[Credit 3]</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 02 -->
+      <article class="work flip" id="work-02" aria-labelledby="work-02-title">
+        <div class="wrap work-grid">
+          <header class="work-head reveal">
+            <p class="work-num">02</p>
+            <h3 id="work-02-title">[PROJECT TITLE 02]</h3>
+            <p class="work-sub">[Artist / Band / Album]</p>
+            <dl class="work-meta">
+              <div><dt>Year</dt><dd>[YEAR]</dd></div>
+              <div><dt>Category</dt><dd>[Category]</dd></div>
+              <div><dt>Runtime</dt><dd>[m:ss]</dd></div>
+            </dl>
+          </header>
+
+          <div class="work-video reveal">
+            <div class="video-frame" data-video-id="YOUTUBE_ID_02" data-title="[PROJECT TITLE 02] - [Artist / Band], official video">
+              <div class="video-placeholder">
+                <p>Video 02</p>
+                <small>Paste the YouTube ID into <code>data-video-id</code> in index.html</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-text reveal">
+            <h4>Reflection and role</h4>
+            <p class="reflection placeholder-text">[PASTE REFLECTIVE PARAGRAPH 02 HERE, approx. 120 words.]</p>
+            <h4>My role</h4>
+            <p class="role-line placeholder-text">[One line stating your exact role.]</p>
+            <h4>Credits</h4>
+            <ul class="credits placeholder-text">
+              <li>[Credit 1]</li>
+              <li>[Credit 2]</li>
+              <li>[Credit 3]</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 03 -->
+      <article class="work" id="work-03" aria-labelledby="work-03-title">
+        <div class="wrap work-grid">
+          <header class="work-head reveal">
+            <p class="work-num">03</p>
+            <h3 id="work-03-title">[PROJECT TITLE 03]</h3>
+            <p class="work-sub">[Artist / Band / Album]</p>
+            <dl class="work-meta">
+              <div><dt>Year</dt><dd>[YEAR]</dd></div>
+              <div><dt>Category</dt><dd>[Category]</dd></div>
+              <div><dt>Runtime</dt><dd>[m:ss]</dd></div>
+            </dl>
+          </header>
+
+          <div class="work-video reveal">
+            <div class="video-frame" data-video-id="YOUTUBE_ID_03" data-title="[PROJECT TITLE 03] - [Artist / Band], official video">
+              <div class="video-placeholder">
+                <p>Video 03</p>
+                <small>Paste the YouTube ID into <code>data-video-id</code> in index.html</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="work-text reveal">
+            <h4>Reflection and role</h4>
+            <p class="reflection placeholder-text">[PASTE REFLECTIVE PARAGRAPH 03 HERE, approx. 120 words.]</p>
+            <h4>My role</h4>
+            <p class="role-line placeholder-text">[One line stating your exact role.]</p>
+            <h4>Credits</h4>
+            <ul class="credits placeholder-text">
+              <li>[Credit 1]</li>
+              <li>[Credit 2]</li>
+              <li>[Credit 3]</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <p class="wrap runtime-note">Total viewing time across the three works: <span class="placeholder-text">[m:ss]</span> (within the 10 to 15 minute review window).</p>
+    </section>
+
+    <!-- BACKGROUND -->
+    <section id="background" class="background">
+      <div class="wrap bg-grid">
+        <header class="section-head reveal">
+          <p class="eyebrow">Background</p>
+          <h2>About Dibbo</h2>
+        </header>
+
+        <div class="about reveal">
+          <p class="lede">Dibbo Nasser is a Dhaka-based guitarist and composer, lead guitarist of Chirkutt, the internationally performing Bangladeshi folk-rock band, and founder of the progressive rock band Fantasy Realm, established in 2019.</p>
+          <p>In 2025 he contributed to Chirkutt's fourth studio album, <em>Bhalobasha Shomogro</em>, and released Fantasy Realm's studio album, <em>21g</em>.</p>
+          <p>His session guitar work includes projects with the late Shafin Ahmed (Miles), Sunidhi Nayak, Pritom Hasan, Rafa, Arekta Rock Band, and Shishir Ahmed. He has also contributed to music for films, television dramas, television commercials, jingles, voice-over productions, and collaborative arrangements.</p>
+          <p>His professional experience includes time at Radio Today 89.6 FM and work associated with Niketon, which shaped a working habit of serving the needs of a piece, a brand, or a collaborator before his own instincts.</p>
+        </div>
+
+        <div class="credits-block reveal">
+          <h3 class="mini">Selected credits</h3>
+          <dl class="cred-list">
+            <div><dt>Bands</dt><dd>Chirkutt (Lead Guitarist) <br>Fantasy Realm (Founder)</dd></div>
+            <div><dt>Albums</dt><dd><em>Bhalobasha Shomogro</em>, Chirkutt (2025) <br><em>21g</em>, Fantasy Realm (2025)</dd></div>
+            <div><dt>Film &amp; media</dt><dd><em>Monogamy</em> (full scoring and songs) <br><em>Mridha vs Mridha</em> <br><em>Rickshaw Girl</em> <br>Film songs, television dramas, commercial productions</dd></div>
+            <div><dt>Collaborations</dt><dd>Shishir Ahmed &middot; Sunidhi Nayak &middot; Pritom Hasan &middot; Ahmed Hasan Sunny &middot; Rafa &middot; Angel Noor &middot; Zaivs &middot; Tridib</dd></div>
+          </dl>
+        </div>
+
+        <div class="milestones reveal">
+          <h3 class="mini">International performances and recognition</h3>
+          <dl class="cred-list">
+            <div><dt>International</dt><dd>UNESCO Headquarters, Paris <br>Palais des Nations, Geneva</dd></div>
+            <div><dt>Major concerts</dt><dd>Joy Bangla 2023 <br>Joy Bangla 2024 (headlined) <br>Dhaka RockFest 2.0 (2023) <br>Spirits of July, Army Stadium, with Rahat Fateh Ali Khan <br>ETV Phonolive 2026</dd></div>
+            <div><dt>Recognition</dt><dd>Band of the Year (2023) <br>Best Band (2025), 25th Dhallywood Film &amp; Music Awards, with Chirkutt, recognizing "Dami" from <em>Bhalobasha Shomogro</em></dd></div>
+          </dl>
+        </div>
+
+        <details class="gear reveal">
+          <summary>Equipment and musical practice</summary>
+          <dl class="cred-list">
+            <div><dt>Guitars</dt><dd>Charvel DK HSS Shell Pink &middot; Diamond BOLFM-KB &middot; LTD EC-330FM &middot; Fender FD18B California Series</dd></div>
+            <div><dt>Amplification</dt><dd>Bugera G5 Infinium Tube Head &middot; Marshall MGCF15</dd></div>
+            <div><dt>Processors</dt><dd>Line 6 Helix LT &middot; Headrush MX5 &middot; Boss ME-25 &middot; Mooer GE200</dd></div>
+          </dl>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTACT -->
+  <footer id="contact" class="contact">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Contact</p>
+        <a class="mail" href="mailto:Dibbonasser@gmail.com">Dibbonasser@gmail.com</a>
+      </div>
+      <ul class="links reveal">
+        <li><a href="https://facebook.com/dibbo.nasser" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="https://instagram.com/dibbo.nasser" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <!-- TODO: replace href="#" with the verified channel and artist URLs -->
+        <li><a class="todo-link" href="#" data-todo="youtube" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+        <li><a class="todo-link" href="#" data-todo="spotify" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+      </ul>
+    </div>
+    <div class="wrap foot">
+      <p>Dibbo Nasser &middot; Dhaka, Bangladesh</p>
+      <p>Selected musical work and professional experience.</p>
+    </div>
+  </footer>
+
+  <script>
+(function () {
+  'use strict';
+  document.documentElement.classList.add('js');
+
+  /* 1. Lazy-load YouTube embeds (privacy-enhanced domain, no autoplay) */
+  var frames = document.querySelectorAll('.video-frame');
+
+  function isPlaceholder(id) {
+    return !id || !/^[A-Za-z0-9_-]{11}$/.test(id);
+  }
+
+  function loadVideo(frame) {
+    if (frame.dataset.loaded) return;
+    var id = (frame.dataset.videoId || '').trim();
+    if (isPlaceholder(id)) return; // keep the visible placeholder panel
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?rel=0&modestbranding=1&playsinline=1';
+    iframe.title = frame.dataset.title || 'YouTube video player';
+    iframe.loading = 'lazy';
+    iframe.allow = 'accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+    iframe.allowFullscreen = true;
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    frame.innerHTML = '';
+    frame.appendChild(iframe);
+    frame.dataset.loaded = 'true';
+  }
+
+  if ('IntersectionObserver' in window) {
+    var vo = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { loadVideo(e.target); obs.unobserve(e.target); }
+      });
+    }, { rootMargin: '400px 0px' });
+    frames.forEach(function (f) { vo.observe(f); });
+  } else {
+    frames.forEach(loadVideo);
+  }
+
+  /* 2. Scroll reveal */
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var ro = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(function (el) { ro.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* 3. Active nav link */
+  var links = document.querySelectorAll('.site-header nav a');
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window) {
+    var no = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          links.forEach(function (a) { a.classList.remove('active'); });
+          var a = map[e.target.id];
+          if (a) a.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    ['intro', 'works', 'background', 'contact'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) no.observe(el);
+    });
+  }
+
+  /* 4. Block clicks on social links that still need a real URL */
+  document.querySelectorAll('.todo-link').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      if (a.getAttribute('href') === '#') e.preventDefault();
+    });
+  });
+})();
+</script>
+</body>
+</html>
